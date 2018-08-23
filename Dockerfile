@@ -1,3 +1,3 @@
-From node:8.11-alpine
+From node:6.14-alpine
 
 RUN yarn global add gulp-cli
