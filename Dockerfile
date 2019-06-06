@@ -2,7 +2,7 @@ From node:8.16-alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk add git g++ gcc libgcc libstdc++ libpng libpng-dev linux-headers make python && \
+    apk add bash git g++ gcc libgcc libstdc++ libpng libpng-dev linux-headers make python && \
     apk update && \
     npm install npm@latest -g
 
