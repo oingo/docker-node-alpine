@@ -29,3 +29,4 @@ ENV SKIP_SASS_BINARY_DOWNLOAD_FOR_CI true
 ENV SKIP_NODE_SASS_TESTS true
 
 RUN yarn global add gulp-cli
+RUN yarn global add pngquant-bin
