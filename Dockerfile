@@ -1,8 +1,8 @@
-From node:8.11-alpine
+From node:8.16-alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk add git g++ gcc libgcc libstdc++ linux-headers make python && \
+    apk add git g++ gcc libgcc libstdc++ libpng-dev linux-headers make python && \
     apk update && \
     npm install npm@latest -g
 

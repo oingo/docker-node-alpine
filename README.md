@@ -2,4 +2,4 @@
 
 ### Base Docker Image
 
-* [node:8.11](https://hub.docker.com/_/node/)
+* [node:8.16](https://hub.docker.com/_/node/)
