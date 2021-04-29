@@ -30,3 +30,6 @@ ENV SKIP_NODE_SASS_TESTS true
 
 RUN yarn global add gulp-cli
 RUN yarn global add pngquant-bin
+
+RUN apk update && apk add ruby ruby-ffi
+RUN gem install compass --no-ri --no-rdoc
