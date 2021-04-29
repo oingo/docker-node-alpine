@@ -1,8 +1,8 @@
-From node:8.16-alpine
+From node:8.11-alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk add bash git g++ gcc libgcc libstdc++ libpng libpng-dev linux-headers make python && \
+    apk add git g++ gcc libgcc libstdc++ linux-headers make python && \
     apk update && \
     npm install npm@latest -g
 
@@ -29,7 +29,6 @@ ENV SKIP_SASS_BINARY_DOWNLOAD_FOR_CI true
 ENV SKIP_NODE_SASS_TESTS true
 
 RUN yarn global add gulp-cli
-RUN yarn global add pngquant-bin
 
 RUN apk update && apk add ruby ruby-ffi
 RUN gem install compass --no-ri --no-rdoc
